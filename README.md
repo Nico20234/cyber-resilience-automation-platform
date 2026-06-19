@@ -147,3 +147,25 @@ terraform init
 terraform plan
 
 terraform apply
+Automation Flow
+Terraform
+    |
+    v
+Docker Container
+    |
+    v
+Flask API
+    |
+    v
+Health Monitoring
+    |
+    v
+Ansible Recovery
+Skills demonstrated
+Python automation
+REST API development
+Linux administration
+Docker containerization
+Ansible automation
+Terraform Infrastructure as Code
+Git workflow
