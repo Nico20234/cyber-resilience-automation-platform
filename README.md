@@ -35,6 +35,7 @@ Implementar un flujo de resiliencia donde un servicio pueda ser monitoreado cont
 - Ansible
 - Linux / WSL2
 - Git
+- Terraform (Infrastructure as Code)
 
 ## Componentes
 
@@ -124,3 +125,25 @@ Ansible Playbook
 Resultado:
 
 Servicio funcionando
+## Infrastructure as Code
+
+Terraform is used to provision and manage the Docker container infrastructure.
+
+Commands:
+
+terraform init
+
+terraform plan
+
+terraform apply
+## Infrastructure as Code
+
+Terraform is used to provision and manage the Docker container infrastructure.
+
+Commands:
+
+terraform init
+
+terraform plan
+
+terraform apply
