@@ -1,0 +1,17 @@
+---
+- name: Restart automation service
+
+  hosts: local
+
+  become: false
+
+
+  tasks:
+
+    - name: Start Docker container
+
+      community.docker.docker_container:
+
+        name: automation-api
+
+        state: started

@@ -9,12 +9,16 @@ CONTAINER_NAME = "automation-api"
 
 def restart_service():
 
-    print("Reiniciando servicio...")
+    print("Ejecutando recuperación con Ansible...")
 
     subprocess.run(
-        ["docker", "start", CONTAINER_NAME]
-    )
-
+    [
+        "ansible-playbook",
+        "-i",
+        "ansible/inventory",
+        "ansible/restart_service.yml"
+    ]
+)
 
 def check_service():
 
