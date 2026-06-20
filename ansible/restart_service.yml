@@ -1,12 +1,13 @@
 ---
 - name: Restart automation service
 
-  hosts: local
+  hosts: localhost
 
-  become: false
+  connection: local
 
 
   tasks:
+
 
     - name: Start Docker container
 
@@ -14,4 +15,11 @@
 
         name: automation-api
 
+        image: automation-api
+
         state: started
+
+        restart_policy: always
+
+        ports:
+          - "5000:5000"

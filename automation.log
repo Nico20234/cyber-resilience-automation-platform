@@ -1,0 +1,22 @@
+2026-06-20 02:19:05,366 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:19:05,367 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:19:25,432 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:19:25,432 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:19:42,218 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:19:42,218 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:19:59,297 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:19:59,298 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:20:17,912 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:20:17,912 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:20:35,831 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:20:35,831 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:20:53,358 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:20:53,358 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:21:10,382 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:21:10,382 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:26:42,423 - ERROR - Error detectado: HTTPConnectionPool(host='localhost', port=5000): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5000): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-06-20 02:26:42,423 - WARNING - Ejecutando recuperación con Ansible
+2026-06-20 02:26:59,422 - INFO - Servicio funcionando
+2026-06-20 02:27:09,430 - INFO - Servicio funcionando
+2026-06-20 02:27:19,438 - INFO - Servicio funcionando
+2026-06-20 02:27:29,444 - INFO - Servicio funcionando

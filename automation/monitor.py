@@ -1,51 +1,65 @@
 import requests
 import time
 import subprocess
+import logging
 
 
-SERVICE_URL = "http://localhost:5000/health"
-CONTAINER_NAME = "automation-api"
+logging.basicConfig(
+    filename="automation.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+
+URL = "http://localhost:5000/health"
 
 
 def restart_service():
 
-    print("Ejecutando recuperación con Ansible...")
+    logging.warning("Ejecutando recuperación con Ansible")
 
     subprocess.run(
-    [
-        "ansible-playbook",
-        "-i",
-        "ansible/inventory",
-        "ansible/restart_service.yml"
-    ]
-)
-
-def check_service():
-
-    try:
-
-        response = requests.get(
-            SERVICE_URL,
-            timeout=5
-        )
-
-        if response.status_code == 200:
-            print("Servicio funcionando")
-
-        else:
-            print("Servicio con problemas")
-
-
-    except Exception:
-
-        print("Servicio caído")
-
-        restart_service()
-
+        [
+            "ansible-playbook",
+            "-i",
+            "ansible/inventory",
+            "ansible/restart_service.yml"
+        ]
+    )
 
 
 while True:
 
-    check_service()
+    try:
+
+        response = requests.get(URL, timeout=5)
+
+
+        if response.status_code == 200:
+
+            print("Servicio funcionando")
+
+            logging.info("Servicio funcionando")
+
+
+        else:
+
+            print("Servicio caído")
+
+            logging.error("Health check falló")
+
+            restart_service()
+
+
+
+    except Exception as e:
+
+        print("Servicio caído")
+
+        logging.error(f"Error detectado: {e}")
+
+        restart_service()
+
+
 
     time.sleep(10)
