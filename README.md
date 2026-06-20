@@ -6,6 +6,19 @@ Proyecto de automatización orientado a monitoreo, recuperación automática de 
 
 Implementar un flujo de resiliencia donde un servicio pueda ser monitoreado continuamente y recuperado automáticamente ante fallos utilizando herramientas de automatización.
 
+# Cyber Resilience Automation Platform
+
+![CI](https://github.com/Nico20234/cyber-resilience-automation-platform/actions/workflows/ci.yml/badge.svg)
+
+Automation platform implementing:
+
+- Health monitoring
+- Self-healing services
+- Docker containerization
+- Ansible recovery
+- Terraform infrastructure as code
+- GitHub Actions CI/CD
+
 ## Arquitectura
             +----------------+
             |   monitor.py   |
