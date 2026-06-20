@@ -1,6 +1,6 @@
 # Architecture
 
-
+```text
              GitHub Actions
                     |
                     |
